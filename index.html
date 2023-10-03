@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    
+    <title>Formulário</title>
+</head>
+<body>
+
+    <!-- Vou criar uma div container para colocar "Criar sua conta" -->
+
+    <div class="container">
+        <div class="header">
+            <h2> Criar sua Conta DEV</h2>
+        </div>
+
+        <!-- Em baixo irei criar o "form" para criar o formulário em si -->
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <!-- Label em si , então ele vai ser nome de usuario, email-->
+                <label for="username">Nome Completo</label>
+                <!-- Input vai ser a barra para o preenchimento! -->
+                <!-- dentro id irei colocar "username" -->
+                <input type="text" id="username" placeholder="Digite seu nome completo"/>
+                <!-- tag i vai ser os icones de alerta dentro do input -->
+                <!-- fas fa-exclamation-circle irá fazer o desenho do icone! -->
+                <i class="fas fa-exclamation-circle"></i>
+
+                <!-- fas fa-check-circle irá fazer o desenho de conferido! -->
+                <i class="fas fa-check-circle"></i>
+                <!-- smail vai ser a mensagem de erro! ao exibir -->
+                <small>Mensagem de erro</small>
+            </div>
+
+
+            <div class="form-control ">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Digite aqui seu email..."/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="text" id="password" placeholder="Digite sua senha..."/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+
+            <div class="form-control">
+                <label for="password-confirmation">Confirmação de Senha</label>
+                <input type="text" id="password-confirmation" placeholder="Digite sua senha novamente!"/>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <!-- Criei um botão para o envio! -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script 
+        src="https://kit.fontawesome.com/54e32c86c5.js" 
+        crossorigin="anonymous">
+    </script>    
+
+    <script src="./scripts.js"></script>
+  
+</body>
+</html>
